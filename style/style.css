@@ -1,0 +1,415 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "poppins_regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins_medium";
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "poppins_semibold";
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+/*NORMALIZE*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*VERIABLE*/
+:root {
+    --font1: "poppins_regular";
+    --font2: "poppins_medium";
+    --font3: "poppins_semibold";
+    --color1: #000000;
+    --color2: #939393;
+    --color3: #263238;
+    --color4: #8F95A5;
+    --color5: #FFFFFF;
+    --color6: #F5F5F5;
+}
+
+/*HEADER*/
+.header {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*NAVBAR*/
+.navbar_container {
+    max-width: 1340px;
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--color5);
+    z-index: 888;
+}
+
+.nav_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+.nav_logo {
+    font-family: var(--font1);
+    font-size: 36px;
+    color: var(--color1);
+}
+
+.nav_logo span {
+    color: var(--color2);
+}
+
+.nav_list {}
+
+.nav_list ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav_list a {
+    font-family: var(--font2);
+    font-size: 20px;
+    color: var(--color3);
+    text-decoration: none;
+}
+
+.nav_list a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 220px;
+    height: 70px;
+    border: 1px solid var(--color3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button button {
+    border: none;
+    background: transparent;
+    font-family: var(--font1);
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.button button:hover {
+    color: var(--color2);
+
+}
+
+/*INTRO*/
+.into {
+    margin-bottom: 147px;
+    padding-top: 50px;
+}
+
+.intro_container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro_info {}
+
+.intro_title {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.intro_title_text {
+    font-family: var(--font3);
+    font-size: 64px;
+    line-height: 80px;
+    width: 386px;
+    margin-right: 38px;
+}
+
+.intro_title_img img {
+    width: 85px;
+    height: 85px;
+    position: relative;
+    top: 30px;
+}
+
+
+.intro_text {
+    color: var(--color4);
+    font-family: var(--font1);
+    font-size: 24px;
+    width: 568px;
+    margin-bottom: 61px;
+}
+
+.intro_button {
+    width: 438px;
+    height: 118px;
+    background: var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.intro_button:hover {
+    opacity: 0.9;
+}
+
+.intro_button button {
+    border: none;
+    background: none;
+    color: var(--color5);
+    font-family: var(--font1);
+    font-size: 36px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/*SKILLS*/
+.intro_img {}
+
+.skills {}
+
+.skills_container {
+    max-width: 1340px;
+    width: 100%;
+    min-height: 1180px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+.skills_title {
+    font-family: var(--font3);
+    font-size: 48px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.skills_grid {
+    display: grid;
+    max-height: 435px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "speaking writing reading"
+        "speaking listening listening"
+    ;
+    row-gap: 20px;
+    column-gap: 18px;
+
+}
+
+.skills_card {
+    background: var(--color6);
+    border-radius: 10px;
+    padding: 35px 42px;
+}
+
+.skills_card_inner {}
+
+.skills_img {}
+
+.skills_info {}
+
+.skills_info_title {
+    font-family: var(--font3);
+    font-size: 30px;
+    line-height: 80px;
+    color: var(--color3);
+}
+
+.skills_info_text {
+    font-family: var(--font1);
+    font-size: 16px;
+    color: var(--color4);
+    margin-bottom: 50px;
+}
+
+.skills_button {
+    width: 230px;
+    height: 60px;
+    background: var(--color3);
+    border-radius: 5px;
+}
+
+.skills_button:hover {
+    opacity: 0.9;
+}
+
+.skills_button button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: var(--color5);
+    font-family: var(--font2);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.card_speaking {
+    grid-area: speaking;
+
+}
+
+.card_speaking p {
+    max-width: 347px;
+    width: 100%;
+}
+
+.card_writing {
+    grid-area: writing;
+}
+
+
+.card_reading {
+    grid-area: reading;
+}
+
+.card_listening {
+    grid-area: listening;
+}
+
+.card_listening p {
+    max-width: 350px;
+    width: 100%;
+}
+
+
+.skills_card_inner.listening_inner {
+    display: flex;
+}
+
+.listening_inner>.skills_info {
+    order: 1;
+}
+
+.listening_inner>.skills_img {
+    order: 2;
+}
+
+.card_speaking img {
+    width: 390px;
+    height: 390px;
+}
+
+.card_writing img {
+    width: 293px;
+    height: 293px;
+}
+
+.card_reading img {
+    width: 293px;
+    height: 293px;
+
+}
+
+.card_listening img {
+    width: 382px;
+    height: 255px;
+    padding-left: 50px;
+}
+
+/*ABOUT*/
+.about {
+    margin-bottom: 188px;
+}
+
+.about_container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_info {}
+
+.about_title {
+    font-family: var(--font3);
+    font-size: 48px;
+    line-height: 80px;
+    color: var(--color1);
+    margin-bottom: 23px;
+}
+
+.about_text {
+    max-width: 635px;
+    width: 100%;
+    font-family: var(--font1);
+    font-size: 20px;
+    color: var(--color4);
+    margin-bottom: 18px;
+}
+
+.about_nums {
+    max-width: 635px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_num {
+    text-align: center;
+}
+
+.about_counter {
+    font-family: var(--font3);
+    font-size: 48px;
+    line-height: 80px;
+    color: var(--color1);
+}
+
+.about_num_text {
+    font-family: var(--font1);
+    font-size: 20px;
+    color: var(--color4);
+}
+
+.about_img {
+    width: 500px;
+    height: 500px;
+}
+
+/*PRICING*/
+
