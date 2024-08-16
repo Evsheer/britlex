@@ -43,6 +43,11 @@ html {
     --color4: #8F95A5;
     --color5: #FFFFFF;
     --color6: #F5F5F5;
+    --color7: #546269;
+    --color8: #EEEEEE;
+    --color9: #C4C4C4;
+
+
 }
 
 /*HEADER*/
@@ -121,6 +126,7 @@ html {
 
 .button button:hover {
     color: var(--color2);
+    border: 2px solid var(--color3);
 
 }
 
@@ -412,4 +418,208 @@ html {
 }
 
 /*PRICING*/
+.pricing {
+    margin-bottom: 261px;
+}
 
+.pricing_container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pricing_title {
+    font-family: var(--font3);
+    font-size: 48px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.pricing_inner {
+    display: flex;
+    justify-content: space-around;
+    gap: 52px;
+}
+
+.pricing_cards {}
+
+.pricing_img {
+    height: 311px;
+    /* height: 100%; */
+}
+
+.pricing_img img {
+    height: 100%;
+}
+
+.pricing_card_title {
+    font-family: var(--font3);
+    font-size: 30px;
+    line-height: 48px;
+    color: var(--color3);
+}
+
+.pricing_text {
+    height: 95px;
+    font-family: var(--font1);
+    font-size: 20px;
+    color: var(--color4);
+    margin-bottom: 24px;
+}
+
+.pricing_button {
+    width: 240px;
+    height: 45px;
+    background: var(--color8);
+    border-radius: 5px;
+}
+
+.pricing_button button {
+    width: 100%;
+    color: var(--color7);
+    font-family: var(--font1);
+    font-size: 18px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.pricing_button button:hover {
+    border: 1px solid var(--color3);
+    border-radius: 5px;
+}
+
+
+.pricing_span {
+    color: var(--color3);
+    font-size: 30px;
+}
+
+/*CONTACT*/
+.contact {
+    margin-bottom: 133px;
+}
+
+.contact_container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_img {
+    width: 477px;
+    height: 429px;
+}
+
+.contact_info {}
+
+.contact_title {
+    color: var(--color3);
+    font-family: var(--font3);
+    font-size: 48px;
+    line-height: 80px;
+    margin-bottom: 37px;
+}
+
+.contact_text {
+    width: 776px;
+    color: var(--color4);
+    font-family: var(--color1);
+    font-size: 20px;
+    margin-bottom: 52px;
+}
+
+.contact_inputs {
+    display: flex;
+    gap: 12px;
+}
+
+.contact_input_text {
+    width: 450px;
+    height: 80px;
+    border: 1px solid var(--color4);
+    border-radius: 10px;
+    padding-left: 33px;
+    color: var(--color4);
+    font-family: var(--font1);
+    font-size: 16px;
+
+}
+
+
+.contact_input_submit {
+    width: 264px;
+    height: 80px;
+    border: 1px solid transparent;
+    background: var(--color3);
+    border-radius: 10px;
+    color: var(--color5);
+    font-family: var(--font2);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact_input_submit:hover {
+    opacity: 0.9;
+}
+
+/*FOOTER*/
+.footer {
+    margin-bottom: 55px;
+}
+
+.footer_container {
+    max-width: 1340px;
+    width: 100%;
+    height: 146px;
+    margin: 0 auto;
+    border-top: 1px solid var(--color9);
+}
+
+.footer_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer_logo {
+    color: var(--color1);
+    font-family: var(--font1);
+    font-size: 36px;
+}
+
+.footer span {
+    color: var(--color2);
+}
+
+.footer_list {
+    display: flex;
+    gap: 5px;
+}
+
+
+.footer_list li{
+    list-style: none;
+    font-family: var(--font1);
+    font-size: 24px;
+}
+
+.footer_list li:hover{
+    list-style: none;
+    text-decoration: underline;
+    text-decoration-color: var(--color4);
+}
+
+.footer_list a{
+    text-decoration: none;
+    color: var(--color4);
+}
