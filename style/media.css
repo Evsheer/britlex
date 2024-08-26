@@ -1,0 +1,284 @@
+/*1345px--------------------------------------------------------------*/
+@media (max-width: 1500px) {
+
+    /*HEADER_1345px*/
+    .header {
+        margin-bottom: 10px;
+    }
+
+    /*NAVBAR_1345px*/
+    .navbar_container {
+        padding: 0px 30px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+
+    /*INTRO_1345px*/
+    .into {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .intro_container {
+        padding: 0px 30px;
+        margin-bottom: 50px;
+    }
+
+    .intro_title {
+        margin-bottom: 10px;
+    }
+
+    .intro_title_text {
+        margin-bottom: 10px;
+    }
+
+    .intro_text {
+        margin-bottom: 20px;
+    }
+
+    .intro_img img {
+        width: 535px;
+        height: 535px;
+    }
+
+    /*SKILLS_1345px*/
+    .skills {}
+
+    .skills_container {
+        margin-bottom: 100px;
+        padding: 0px 30px;
+        min-height: 1325px;
+    }
+
+    .skills_title {
+        margin-bottom: 20px;
+    }
+
+    /*ABOUT_1345px*/
+    .about {
+        margin-bottom: 50px;
+    }
+
+    .about_container {
+        padding: 0px 30px;
+    }
+
+    /*PRICING_1345px*/
+    .pricing {
+        margin-bottom: 100px;
+    }
+
+    .pricing_container {
+        padding: 0px 30px;
+    }
+
+    .pricing_title {
+        margin-bottom: 50px;
+    }
+
+    /*CONTACT_1345px*/
+    .contact {}
+
+    .contact_container {
+        padding: 0px 30px;
+    }
+
+    /*FOOTER_1345px*/
+
+    .footer {}
+
+    .footer_container {
+        padding: 0px 30px;
+    }
+
+}
+
+/*1250px--------------------------------------------------------------*/
+
+@media (max-width: 1250px) {
+
+    /*SKILLS_1250px*/
+
+    .skills_container {
+        min-height: 1630px;
+    }
+
+
+    .skills_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "speaking writing"
+            "reading listening"
+        ;
+    }
+
+    .skills_card_inner {
+        flex-direction: column;
+    }
+
+    .skills_info {
+        order: 2;
+    }
+
+    .card_listening .skills_img {
+        order: 1;
+        margin-bottom: 39px;
+    }
+
+    .skills_info_title {}
+
+    .skills_info_text {
+        max-width: 347px;
+        width: 100%;
+    }
+
+    .listening_inner .skills_info_text {
+        margin-bottom: 74px;
+    }
+
+    .card_writing .skills_img {
+        margin-bottom: 88px;
+    }
+
+    .card_writing .skills_info_text {
+        margin-bottom: 184px;
+    }
+
+    /*ABOUT_1250px*/
+
+    .about_text {
+        width: 512px;
+    }
+
+    /*PRICING_1250px*/
+
+    .pricing_inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "self live"
+            "personal personal"
+    }
+
+    .card_self {
+        grid-area: self;
+    }
+
+    .card_live {
+        grid-area: live;
+    }
+
+    .card_personal {
+        grid-area: personal;
+        text-align: center;
+    }
+
+    .card_personal .pricing_text {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .pricing_button {
+        margin: 0 auto;
+    }
+
+    /*CONTACT_1250px*/
+
+    .contact_inner {
+        flex-direction: column;
+    }
+
+}
+
+
+/*950px--------------------------------------------------------------*/
+@media (max-width: 1000px) {
+
+
+    .nav_list {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .header_menu {
+        display: block;
+    }
+
+    .intro_inner {
+        flex-direction: column;
+    }
+
+ 
+    .skills_container {
+        min-height: 3180px;
+    }
+
+  
+    .skills_grid {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .card_listening img {
+        padding: 0px;
+    }
+
+
+
+    .about_inner {
+        flex-direction: column;
+    }
+
+    .about_info {
+        order: 2;
+    }
+
+    .about_img {
+        order: 1;
+    }
+
+
+
+
+    .pricing_inner {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .pricing_cards {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact_info {
+        text-align: center;
+    }
+
+    .contact_text {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .contact_inputs {
+        max-width: 550px;
+        width: 100%;
+        gap:5px;
+    }
+
+ 
+    .footer_inner {
+        flex-direction: column;
+    }
+   
+}

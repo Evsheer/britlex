@@ -60,11 +60,13 @@ html {
 .navbar_container {
     max-width: 1340px;
     width: 100%;
-    position: fixed;
+    margin: 0 auto;
+    /* position: fixed;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
     background: var(--color5);
-    z-index: 888;
+    /* z-index: 888; */
+    /* margin-bottom: 50px; */
 }
 
 .nav_inner {
@@ -130,6 +132,10 @@ html {
 
 }
 
+.header_menu{
+    display: none;
+}
+
 /*INTRO*/
 .into {
     margin-bottom: 147px;
@@ -160,7 +166,7 @@ html {
     font-size: 64px;
     line-height: 80px;
     width: 386px;
-    margin-right: 38px;
+    margin-bottom: 38px;
 }
 
 .intro_title_img img {
@@ -607,19 +613,20 @@ html {
 }
 
 
-.footer_list li{
+.footer_list li {
     list-style: none;
     font-family: var(--font1);
     font-size: 24px;
 }
 
-.footer_list li:hover{
+.footer_list li:hover {
     list-style: none;
     text-decoration: underline;
     text-decoration-color: var(--color4);
 }
 
-.footer_list a{
+.footer_list a {
     text-decoration: none;
     color: var(--color4);
 }
+
